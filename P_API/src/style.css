@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #1e1c19;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.header,
+.footer {
+  padding: 2rem;
+  background-color: #22211d;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  & > * {
+    background-color: #22211d;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+  }
+}
+
+.red {
+  background-color: red;
+}
+
+.tabs {
+}
+
+.tabs__button--active {
+  background-color: #22211d;
+  color: white;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
+}
